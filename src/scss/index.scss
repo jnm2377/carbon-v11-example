@@ -1,1 +1,38 @@
+//import the rest of carbon styles
 @use '@carbon/react';
+
+// global content bg and text color
+body {
+  background: react.$background;
+  color: react.$text-primary;
+}
+
+//light and dark mode theme changes
+:root {
+  @include react.theme(react.$g10);
+}
+
+[data-carbon-theme='g90'] {
+  @include react.theme(react.$g90);
+}
+
+//zoned theming bg and text colors
+.cds--white {
+  background: var(--cds-background);
+  color: var(--cds-text-primary);
+}
+
+.cds--g10 {
+  background: var(--cds-background);
+  color: var(--cds-text-primary);
+}
+
+.cds--g90 {
+  background: var(--cds-background);
+  color: var(--cds-text-primary);
+}
+
+.cds--g100 {
+  background: var(--cds-background);
+  color: var(--cds-text-primary);
+}
