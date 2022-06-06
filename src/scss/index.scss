@@ -1,7 +1,10 @@
-//import the rest of carbon styles
+//carbon styles
 @use '@carbon/react';
 
-// global content bg and text color
+//custom styles
+@use './styles';
+
+//global content bg and text color
 body {
   background: react.$background;
   color: react.$text-primary;
