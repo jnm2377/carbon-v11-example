@@ -36,9 +36,11 @@ export default function IndexPage() {
           <h3>Layering examples</h3>
           <Tile>First layer</Tile>
           <Dropdown id="1" />
+
           <Layer className="layer-spacing">
             <Tile>Second layer</Tile>
             <Dropdown id="2" />
+
             <Layer className="layer-spacing">
               <Tile>Third layer</Tile>
               <Dropdown id="3" />
