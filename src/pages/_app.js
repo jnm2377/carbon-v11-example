@@ -1,10 +1,10 @@
 import '../scss/index.scss';
-import { ThemePreference } from '../components/ThemePreference';
+import { GlobalTheme } from '@carbon/react';
 
 export default function App({ Component, pageProps }) {
   return (
-    <ThemePreference>
+    <GlobalTheme theme="g90">
       <Component {...pageProps} />
-    </ThemePreference>
+    </GlobalTheme>
   );
 }

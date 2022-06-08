@@ -10,12 +10,8 @@ body {
   color: react.$text-primary;
 }
 
-//light and dark mode theme changes
+//global theme
 :root {
-  @include react.theme(react.$g10);
-}
-
-[data-carbon-theme='g90'] {
   @include react.theme(react.$g90);
 }
 

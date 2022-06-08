@@ -1,12 +1,9 @@
-import { Content, Layer, Theme, Tile, Toggle } from '@carbon/react';
+import { Content, Layer, Theme, Tile } from '@carbon/react';
 import { Header } from '../components/Header';
 import { Accordion } from '../components/Accordion';
 import { Dropdown } from '../components/Dropdown';
-import { useThemePreference } from '../components/ThemePreference';
 
 export default function IndexPage() {
-  const { theme, setTheme } = useThemePreference();
-
   return (
     <>
       <Header />
@@ -16,21 +13,6 @@ export default function IndexPage() {
           While the global theme is set to g90 by default, our new theming
           capabilities make it easy to implement light and dark mode.
         </p>
-        <Toggle
-          className="toggle-spacing"
-          onToggle={() => {
-            if (theme === 'g10') {
-              setTheme('g90');
-            }
-            if (theme === 'g90') {
-              setTheme('g10');
-            }
-          }}
-          labelText="Theme Switcher"
-          labelA="Dark"
-          labelB="Light"
-          id="toggle-1"
-        />
 
         <section>
           <h3>Layering examples</h3>
